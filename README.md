@@ -1,4 +1,4 @@
-#Alarm clock lamp
+# Alarm clock lamp
 
 Project consisting of lighting a lamp progressively until the time of waking up in the morning
 
@@ -6,6 +6,7 @@ Project consisting of lighting a lamp progressively until the time of waking up 
 
 * Wemos D1 mini
 * AC light dimer module
+* Hi-Link HLK-PM01
 
 ## Wemos
 
@@ -14,3 +15,5 @@ the code of the wemos has a web server that will receive the time to turn on the
 ## Android
 
 The Android application allows to get automatically the time of the next alarm clock and to define the time of switching on. A button allows to send this data to Wemos.
+
+![](./images/clock_lamp.jpg)
