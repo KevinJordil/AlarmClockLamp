@@ -27,7 +27,6 @@ ESP8266WebServer server(80);
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "europe.pool.ntp.org", 7200);
 int startTimestamp = -1, durationTimestamp = -1, epochStates = -1, lastPower = 0;
-String displayAlarm = "";
 
 
 void setup() {
@@ -59,8 +58,6 @@ void setup() {
     durationTimestamp  = server.arg("durationtimestamp").toInt();
 
     epochStates = durationTimestamp / LAMP_STATES;
-
-    displayAlarm = server.arg("alarm");
 
     timeClient.setTimeOffset(server.arg("gmtoffset").toInt());
     timeClient.update();
